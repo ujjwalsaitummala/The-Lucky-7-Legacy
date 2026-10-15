@@ -1,21 +1,23 @@
-# The-Lucky-7-Legacy
-A futuristic, Matrix-inspired coding project generator featuring 750 ideas, an interactive slot machine, project tracking, and GitHub repository links. Spin, discover, build, and create your legacy.
+# The Lucky 7 Legacy — installable web app
 
-**Spin the wheel. Discover your next big idea. Build your legacy.**
+This version is built to run in modern desktop and mobile browsers. It can be published on GitHub Pages, added to the home screen/desktop where supported, and loaded offline after its first successful visit. It does **not** need a BAT launcher or server backend.
 
-The Lucky 7 Legacy is an interactive coding project discovery platform that turns choosing your next project into an exciting experience. Featuring a collection of 750 project ideas, a colorful slot-machine interface, and a futuristic Matrix-inspired atmosphere, it helps developers break through creative blocks and find their next challenge.
+## Publish to GitHub Pages
+1. Create or open your GitHub repository.
+2. Upload the contents of this folder to the repository root: `index.html`, `manifest.webmanifest`, `sw.js`, `icons/`, and this README.
+3. In the repository, open **Settings → Pages** and select **Deploy from a branch**, your branch (usually `main`), and **/(root)**. Save.
+4. Open the published HTTPS URL once while online. Wait for it to finish loading. The service worker then caches the app shell for offline use.
 
-🎰 **Features**
+## Install on devices
+- **Android (Chrome/Edge):** open the HTTPS site → browser menu → **Install app** or **Add to Home screen**.
+- **Windows/macOS/Linux (supported browsers):** open the HTTPS site → use the install icon in the address bar, or browser menu → **Install app** / **Create shortcut**.
+- **iPhone/iPad (Safari):** open the HTTPS site → Share → **Add to Home Screen**. iOS installation/offline behavior depends on the installed iOS version.
 
-- **750 Project Ideas:** Explore a diverse collection of coding projects.
-- **Interactive Slot Machine:** Spin to discover your next project.
-- **Futuristic Design:** Experience a dark, Matrix-inspired interface with vibrant visual effects.
-- **Project Tracking:** Keep track of projects you've completed.
-- **GitHub Integration:** Add your repository URL to connect your completed work.
-- **Progress Saving:** Save your progress in your browser.
-- **Cross-Device Potential:** Designed as a web app that can work across desktop and mobile browsers.
-- **Installable Experience:** Supports installation as a Progressive Web App on compatible devices.
+## Progress and device syncing
+Project progress is stored locally in the browser. It does **not automatically sync** between devices or browsers. Use the app's export/import backup controls to transfer progress. Automatic multi-device sync requires a configured cloud backend and sign-in.
 
-Whether you're a beginner looking for your first coding challenge or an experienced developer searching for inspiration, The Lucky 7 Legacy turns random ideas into opportunities to learn, create, and grow.
+## Offline limits
+The app must be opened online at least once to cache its files. Browser storage can be cleared by the user or operating system; export backups regularly. Some browser features require HTTPS, which GitHub Pages provides.
 
-**Your next project is one spin away. Make it count.**
+## Privacy
+This package does not add analytics or send your project data to a server. Anyone who can use the same browser profile may be able to see locally saved progress. Do not save passwords or secret tokens in project notes.
